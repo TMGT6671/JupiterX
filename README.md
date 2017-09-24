@@ -1,0 +1,2 @@
+# JupiterX
+Pocketmine-MPから直接書き換えた新しいJupiterです。Nukkitのコードは一切使用しておりません。
