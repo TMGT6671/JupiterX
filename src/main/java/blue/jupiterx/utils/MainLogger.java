@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import org.fusesource.jansi.Ansi;
 import org.fusesource.jansi.AnsiConsole;
 
-import blue.jupiterx.Server;
+import blue.jupiterx.JupiterX;
 
 public class MainLogger extends Thread {
 
@@ -156,7 +156,7 @@ public class MainLogger extends Thread {
         } else {
             long date = logFile.lastModified();
             String newName = new SimpleDateFormat("Y-M-d HH.mm.ss").format(new Date(date)) + ".log";
-            File oldLogs = new File(Server.DATA_PATH, "logs");
+            File oldLogs = new File(JupiterX.DATA_PATH, "logs");
             if (!oldLogs.exists()) {
                 oldLogs.mkdirs();
             }

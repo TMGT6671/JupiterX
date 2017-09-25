@@ -1,9 +1,5 @@
 package blue.jupiterx.utils;
 
-/**
- * author: MagicDroidX
- * Nukkit Project
- */
 public enum LogLevel {
     EMERGENCY,
     ALERT,
