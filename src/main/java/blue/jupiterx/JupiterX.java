@@ -1,5 +1,19 @@
 package blue.jupiterx;
 
+/**     _             _ _          __  __
+ *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /
+ *  _  | | | | | '_ \| | __/ _ \ '__\  /
+ * | |_| | |_| | |_) | | ||  __/ |  /  \
+ *  \___/ \__,_| .__/|_|\__\___|_| /_/\_\
+ *             |_|
+ *
+ * These codes are from PocketMine-MP.
+ * We have never used Nukkit's codes.
+ * 
+ * @author JupiterDevelopmentTeam
+ * @link http://jupiterdevelopmentteam.github.io
+ */
+
 public class JupiterX {
 
     public static final String VERSION = "1.0";
@@ -8,17 +22,16 @@ public class JupiterX {
     public static final String AUTHOR = "JupiterDevelopmentTeam";
 
     public static final String USER_PATH = System.getProperty("user.dir") + "/";
-    public static final String PLUGIN_PATH = System.getProperty("user.dir") + "/plugins";
-    public static final String WORLD_PATH = System.getProperty("user.dir") + "/worlds";
+    public static final String PLUGIN_PATH = System.getProperty("user.dir") + "plugins";
+    public static final String WORLD_PATH = System.getProperty("user.dir") + "worlds";
 
     public static final String OS = System.getProperty("os.name").toLowerCase();
 
     public static final long START_TIME = System.currentTimeMillis();
 
-
-    public static void main(String args[]){
+    public static void main(String[] args) {
         System.out.println("Starting JupiterX server for Minecraft...");
-
+        
     }
 
 }
