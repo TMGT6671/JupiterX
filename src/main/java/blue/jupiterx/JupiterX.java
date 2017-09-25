@@ -40,8 +40,6 @@ public class JupiterX {
     public static void main(String[] args) {
         System.out.println("Starting JupiterX server for Minecraft...");
 
-        lang = new BaseLanguage();
-
         if(!(JAVA_VERSION.startsWith("1.8") || JAVA_VERSION.startsWith("1.9"))){
             System.out.println("[CRITICAL] This program runs on JRE(JRE) 1,8 or 1.9.");
             System.out.println("[CRITICAL] You must use JRE(JDK) 1.8 or 1.9.");
