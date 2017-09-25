@@ -36,16 +36,16 @@ public class Server {
         this.dataPath = dataPath;
         this.pluginPath = pluginPath;
 
-        if(!new File(this.pluginPath).exists()){
-            new File(this.pluginPath).mkdirs();
+        if(!new File(this.getPluginPath()).exists()){
+            new File(this.getPluginPath()).mkdirs();
         }
 
-        if(!new File(JupiterX.WORLD_PATH).exists()){
-            new File(JupiterX.WORLD_PATH).mkdirs();
+        if(!new File(this.getWorldPath()).exists()){
+            new File(this.getWorldPath()).mkdirs();
         }
 
-        if(!new File(this.dataPath + "players/").exists()){
-            new File(this.dataPath + "players/").mkdirs();
+        if(!new File(this.getPlayerPath()).exists()){
+            new File(this.getPlayerPath()).mkdirs();
         }
     }
 
@@ -81,12 +81,19 @@ public class Server {
         return this.filePath;
     }
 
-
     public String getDataPath() {
         return this.dataPath;
     }
 
     public String getPluginPath() {
         return this.pluginPath;
+    }
+
+    public String getPlayerPath() {
+        return JupiterX.PLAYER_PATH;
+    }
+
+    public String getLogPath() {
+        return JupiterX.LOG_PATH;
     }
 }

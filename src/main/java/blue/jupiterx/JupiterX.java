@@ -1,6 +1,7 @@
 package blue.jupiterx;
 
 import blue.jupiterx.lang.BaseLanguage;
+import blue.jupiterx.utils.MainLogger;
 
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /
@@ -29,6 +30,8 @@ public class JupiterX {
     public static final String DATA_PATH = System.getProperty("user.dir") + "/";
     public static final String PLUGIN_PATH = DATA_PATH + "plugins/";
     public static final String WORLD_PATH = DATA_PATH + "worlds/";
+    public static final String PLAYER_PATH = DATA_PATH + "players/";
+    public static final String LOG_PATH = DATA_PATH + "logs/";
 
     public static final String OS = System.getProperty("os.name").toLowerCase();
     public static final String JAVA_VERSION = System.getProperty("java.version");
@@ -49,7 +52,9 @@ public class JupiterX {
             System.exit(0);
         }
 
+        final MainLogger logger = new MainLogger(DATA_PATH + "server.log");
 
+        new Server(logger, DATA_PATH, DATA_PATH, PLAYER_PATH);
     }
 
 }
