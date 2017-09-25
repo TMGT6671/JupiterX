@@ -22,9 +22,9 @@ public class MainLogger extends Thread {
 
     protected final String logPath;
     protected final boolean logDebug;
-    protected final ConcurrentLinkedQueue<String> logBuffer = new ConcurrentLinkedQueue<>();
+    protected final ConcurrentLinkedQueue<String> logBuffer = new ConcurrentLinkedQueue<String>();
     protected boolean shutdown;
-    private final Map<TextFormat, String> replacements = new EnumMap<>(TextFormat.class);
+    private final Map<TextFormat, String> replacements = new EnumMap<TextFormat, String>(TextFormat.class);
     private final TextFormat[] colors = TextFormat.values();
 
     protected static MainLogger logger;
