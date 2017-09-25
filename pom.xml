@@ -1,13 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <name>JupiterX</name>
     <groupId>blue.jupiterx</groupId>
     <artifactId>JupiterX</artifactId>
-    <version>Build-1.0</version>
-
-    <url>https://github.com/JupiterDevelopmentTeam/JupiterDevelopmentTeam</url>
+    <version>0.0.1-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -42,13 +37,13 @@
             <version>2.14.2</version>
         </dependency>
         <dependency>
-				<!--
-				    このライブラリの依存関係はパブリックリポジトリでは利用できないようです。
+                <!--
+                    このライブラリの依存関係はパブリックリポジトリでは利用できないようです。
             ライブラリはこのプロジェクトのlibディレクトリの中に入っています。
             そのため、このライブラリを使用するにはローカルのMavenリポジトリに手動でインストールする必要があります。
             下記のコマンドは、Mavenが正しく設定されていてあなたがlibディレクトリにいる状態で実行すると動作します。
             mvn install:install-file -Dfile=leveldb.jar -DgroupId=com.tinfoiled.mcpe.leveldb -DartifactId=leveldb -Dversion=0.8 -Dpackaging=jar
-			     -->
+                 -->
             <groupId>com.tinfoiled.mcpe.leveldb</groupId>
             <artifactId>leveldb</artifactId>
             <version>0.8</version>
@@ -59,15 +54,15 @@
             <version>5.0.0.Alpha2</version>
         </dependency>
         <dependency>
-    		    <groupId>commons-collections</groupId>
-    		    <artifactId>commons-collections</artifactId>
-    		    <version>3.2.1</version>
-		    </dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>3.2.1</version>
+            </dependency>
     </dependencies>
 
     <build>
         <plugins>
-		    <plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-install-plugin</artifactId>
                 <version>2.5.2</version>
