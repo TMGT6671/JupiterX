@@ -15,7 +15,7 @@ rem count変数は起動回数の保持に使われます。いじらないで�
 set count=1
 
 rem Soft変数は起動するjarの名前です。
-set Soft=nukkit-Build-1.0.jar
+set Soft=nukkit-0.1-SNAPSHOT.jar
 
 
 
