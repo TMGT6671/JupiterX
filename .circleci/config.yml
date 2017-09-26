@@ -12,25 +12,15 @@ jobs:
     
     steps:
       - checkout
-      - run: git submodule sync
-      - run: git submodule update --init
-      - run: mvn clean
-      - run: mvn package
-      - run: cp -R ./target/JupiterX-0.1-SNAPSHOT.jar $CIRCLE_ARTIFACTS
-
-      # Download and cache dependencies
       - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "pom.xml" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-
-      #- run: mvn dependency:go-offline
-
+          key: repo-{{ checksum "pom.xml" }}
+      - run: mvn dependency:go-offline
       - save_cache:
           paths:
             - ~/.m2
-          key: v1-dependencies-{{ checksum "pom.xml" }}
-        
-      # run tests!
-      - run: mvn integration-test
+          key: repo-{{ checksum "pom.xml" }}
+      - run: mvn package
+      - store_test_results:
+          path: target/surefire-reports
+      - store_artifacts:
+          path: target/JupiterX-0.1-SNAPSHOT.jar
