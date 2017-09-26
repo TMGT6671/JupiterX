@@ -16,7 +16,7 @@ jobs:
       run: git submodule update --init
       run: mvn clean
       run: mvn package
-      run: cp -R ./target/JupiterX-1.0-SNAPSHOT.jar $CIRCLE_ARTIFACTS
+      run: cp -R ./target/JupiterX-0.1-SNAPSHOT.jar $CIRCLE_ARTIFACTS
 
       # Download and cache dependencies
       - restore_cache:
@@ -25,7 +25,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: mvn dependency:go-offline
+      #- run: mvn dependency:go-offline
 
       - save_cache:
           paths:
