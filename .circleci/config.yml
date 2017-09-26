@@ -26,4 +26,6 @@ jobs:
       - store_test_results:
           path: target/surefire-reports
       - store_artifacts:
-          path: target/JupiterX-0.1-SNAPSHOT.jar
+          path: target/JupiterX-Build-1.0.jar
+          
+          # 0.1-SNAPSHOT.jar
