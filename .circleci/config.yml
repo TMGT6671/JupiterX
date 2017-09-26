@@ -12,11 +12,11 @@ jobs:
     
     steps:
       - checkout
-      run: git submodule sync
-      run: git submodule update --init
-      run: mvn clean
-      run: mvn package
-      run: cp -R ./target/JupiterX-0.1-SNAPSHOT.jar $CIRCLE_ARTIFACTS
+      - run: git submodule sync
+      - run: git submodule update --init
+      - run: mvn clean
+      - run: mvn package
+      - run: cp -R ./target/JupiterX-0.1-SNAPSHOT.jar $CIRCLE_ARTIFACTS
 
       # Download and cache dependencies
       - restore_cache:
