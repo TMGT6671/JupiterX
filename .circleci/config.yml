@@ -15,6 +15,8 @@ jobs:
     
     steps:
       - checkout
+      - run: git submodule sync
+      - run: git submodule update --init
       - restore_cache:
           key: repo-{{ checksum "pom.xml" }}
       - run: mvn dependency:go-offline
@@ -27,5 +29,3 @@ jobs:
           path: target/surefire-reports
       - store_artifacts:
           path: target/JupiterX-0.1-SNAPSHOT.jar
-          
-          # 0.1-SNAPSHOT.jar
