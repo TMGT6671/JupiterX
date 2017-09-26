@@ -40,7 +40,7 @@
                 <!--
                     このライブラリの依存関係はパブリックリポジトリでは利用できないようです。
             ライブラリはこのプロジェクトのlibディレクトリの中に入っています。
-            そのため、このライブラリを使用するにはローカルのMavenリポジトリに手動でインストールする必要があります。
+            このライブラリを使用するにはローカルのMavenリポジトリに手動でインストールする必要があります。
             下記のコマンドは、Mavenが正しく設定されていてあなたがlibディレクトリにいる状態で実行すると動作します。
             mvn install:install-file -Dfile=leveldb.jar -DgroupId=com.tinfoiled.mcpe.leveldb -DartifactId=leveldb -Dversion=0.8 -Dpackaging=jar
                  -->
