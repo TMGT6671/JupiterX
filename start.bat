@@ -1,6 +1,6 @@
 @echo off
 
-rem Jupiter 起動バッチファイル(Windows専用)
+rem JupiterX 起動バッチファイル(Windows専用)
 
 rem 作成: Itsu
 rem 最終更新: 2017/8/30 13:51

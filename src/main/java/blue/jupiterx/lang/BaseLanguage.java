@@ -1,6 +1,7 @@
 package blue.jupiterx.lang;
 
 import java.util.ArrayList;
+
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /
  *  _  | | | | | '_ \| | __/ _ \ '__\  /
@@ -16,6 +17,7 @@ import java.util.ArrayList;
  * @author JupiterDevelopmentTeam
  * @link http://jupiterdevelopmentteam.github.io
  */
+
 import java.util.List;
 
 public class BaseLanguage {

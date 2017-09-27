@@ -12,7 +12,6 @@ import blue.jupiterx.utils.MainLogger;
  *             |_|
  *
  * These codes are from PocketMine-MP.
- * We have never used Nukkit's codes.
  *
  * JupiterX Project
  *
