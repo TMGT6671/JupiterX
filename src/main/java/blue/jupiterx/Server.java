@@ -46,6 +46,10 @@ public class Server {
         if(!new File(this.getPlayerPath()).exists()){
             new File(this.getPlayerPath()).mkdirs();
         }
+
+        if(!new File(this.getLogPath()).exists()){
+            new File(this.getLogPath()).mkdirs();
+        }
     }
 
     public MainLogger getLogger(){
