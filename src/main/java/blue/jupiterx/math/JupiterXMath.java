@@ -1,4 +1,4 @@
-﻿package blue.jupiterx.utils;
+﻿package blue.jupiterx.math;
 
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /
@@ -15,6 +15,6 @@
  * @link http://jupiterx.blue
  */
 
-public class Random {
+public class JupiterXMath {
 
 }
