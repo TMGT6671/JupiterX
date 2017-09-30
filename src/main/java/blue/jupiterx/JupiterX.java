@@ -15,7 +15,7 @@ import blue.jupiterx.utils.MainLogger;
  * JupiterX Project
  *
  * @author JupiterDevelopmentTeam
- * @link http://jupiterdevelopmentteam.github.io
+ * @link http://jupiterx.blue
  */
 
 public class JupiterX {

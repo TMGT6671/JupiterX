@@ -32,7 +32,7 @@ import java.util.List;
  * JupiterX Project
  *
  * @author JupiterDevelopmentTeam
- * @link http://jupiterdevelopmentteam.github.io
+ * @link http://jupiterx.blue
  */
 
 public class BaseLanguage {
