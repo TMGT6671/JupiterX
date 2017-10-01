@@ -1,15 +1,15 @@
-# Fortgeschrittene Konfiguration f端r Nukkit
-# Bei fehlerhaften Einstellungen kann der Server abst端rzen
+# Fortgeschrittene Konfiguration für Nukkit
+# Bei fehlerhaften Einstellungen kann der Server abstürzen
 # Neue Einstellungen/Standards erscheinen nicht automatisch beim upgraden
 
 settings:
  #Multilingual
- #Verf端gbar: eng, chs, cht, jpn, rus, spa, pol, bra, kor, ukr, deu, ltu
+ #Verfügbar: eng, chs, cht, jpn, rus, spa, pol, bra, kor, ukr, deu, ltu
  language: "deu"
  #Sollen alle Nachrichten in Serversprache ausgegeben werden oder sollen Sie vom Client verarbeitet werden
  force-language: false
  shutdown-message: "Server heruntergefahren"
- #Erlaube das auflisten von Plugins 端ber eine Query
+ #Erlaube das auflisten von Plugins über eine Query
  query-plugins: true
  #Soll in der Konsole eine Nachricht erscheinen, wenn ein Plugin eine veraltete Funkttiopn verwendet
  deprecated-verbose: true
@@ -21,9 +21,9 @@ network:
  #Grenze der gesendeten Dateien/Pakete zur gleiden Zeit, in Bytes. Nur diese Pakete werden komprimiert
  #Setze zu 0 to um alles zu komprimieren, -1 um die Komprimierung deaktivieren
  batch-threshold: 256
- #Komprimierungslevel von Zlib wenn eine Menge Pakete/Daten gesendet werden. H旦her = mehr CPU, weniger Bandbreitennutzung
+ #Komprimierungslevel von Zlib wenn eine Menge Pakete/Daten gesendet werden. Höher = mehr CPU, weniger Bandbreitennutzung
  compression-level: 7
- #Nutze AsyncTask zur Komprimierung. F端gt halben Tick Verz旦gerung zu, weniger CPU Verbrauch im Main Theared
+ #Nutze AsyncTask zur Komprimierung. Fügt halben Tick Verzögerung zu, weniger CPU Verbrauch im Main Theared
  async-compression: false
 
 debug:
@@ -40,7 +40,7 @@ timings:
  #Interval zwischen Geschichtsfenstern in ticks
  #Default is 5 minutes (6000 ticks)
  history-interval: 6000
- #L辰nge der ganzen Timing Geschichte 
+ #Länge der ganzen Timing Geschichte 
  #Standard ist eine Stunde (72000 Ticks)
  #This value is capped at a maximum of history-interval * 12
  history-length: 72000
@@ -57,7 +57,7 @@ timings:
 level-settings:
  #Das Standard-Welt Format wenn neue Welten erstellt werden
  default-format: anvil
- #Automatiches 辰ndern von Ticks in Welten, um 20 Ticks zu erreichen
+ #Automatiches ändern von Ticks in Welten, um 20 Ticks zu erreichen
  auto-tick-rate: true
  auto-tick-rate-limit: 20
  #Setzt die Tickgeschwindigkeit (1 = 20 Ticks pro Sekunde, 2 = 10 Ticks pro Sekunde, usw.)
@@ -66,7 +66,7 @@ level-settings:
  always-tick-players: false
 
 chunk-sending:
- #Anzahl der Chuncks die w辰hrend eines Ticks zum Spieler gesendet wird
+ #Anzahl der Chuncks die während eines Ticks zum Spieler gesendet wird
  per-tick: 4
  #Anzahl der Chuncks die zu jedem Spieler gesendet werden soll
  max-chunks: 192
@@ -77,7 +77,7 @@ chunk-sending:
  cache-chunks: false
 
 chunk-ticking:
- #Maximale Anzahl an Chuncks die, w辰hrend eines Ticks, verarbeitet werden
+ #Maximale Anzahl an Chuncks die, während eines Ticks, verarbeitet werden
  per-tick: 40
  #Radius von Chuncks, die bei jedem Tick, bei einem Spieler verarbeitet werden
  tick-radius: 3
@@ -85,9 +85,9 @@ chunk-ticking:
  clear-tick-list: false
 
 chunk-generation:
- #Maximale Anzahl der Chuncks die generiert werden m端ssen, in der Warteschlange
+ #Maximale Anzahl der Chuncks die generiert werden müssen, in der Warteschlange
  queue-size: 8
- #Maximale Anzahl der Chuncks die geladen werden m端ssen, in der Warteschchlange
+ #Maximale Anzahl der Chuncks die geladen werden müssen, in der Warteschchlange
  population-queue-size: 8
 
 ticks-per:
@@ -109,13 +109,13 @@ player:
  save-player-data: true
  
 aliases:
- #Aliasse f端r Befehle
+ #Aliasse für Befehle
  #Beispiele:
  #showtheversion: version
  #savestop: [save-all, stop]
 
 worlds:
- #Diese Einstellungen 端berschreiben die Einstellungen in den server.properties und erlauben mehrere Welten zu laden.
+ #Diese Einstellungen überschreiben die Einstellungen in den server.properties und erlauben mehrere Welten zu laden.
  #Beispiel:
  #world:
  # seed: 404
