@@ -32,12 +32,12 @@ debug:
  commands: false
 
 timings:
- #Enable core and plugin timings by default
+ #timingsを有効にします
  enabled: false
  #Enable monitoring at verbose level, include high-frequency timings
  verbose: false
- #Interval between history frames in ticks
- #Default is 5 minutes (6000 ticks)
+ #history frameの間隔を設定します
+ #デフォルトは 5 分です (6000 ticks)
  history-interval: 6000
  #Length of the whole timing history in ticks
  #Default is 1 hour (72000 ticks)
