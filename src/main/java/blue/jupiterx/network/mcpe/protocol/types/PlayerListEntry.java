@@ -1,4 +1,4 @@
-﻿package blue.jupiterx.network.mcpe.protocol.types;
+package blue.jupiterx.network.mcpe.protocol.types;
 
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /

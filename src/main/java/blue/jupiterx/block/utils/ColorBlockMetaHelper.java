@@ -1,4 +1,4 @@
-﻿package blue.jupiterx.block.utils;
+package blue.jupiterx.block.utils;
 
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /

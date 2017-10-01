@@ -1,4 +1,4 @@
-﻿package blue.jupiterx.event.entity;
+package blue.jupiterx.event.entity;
 
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /

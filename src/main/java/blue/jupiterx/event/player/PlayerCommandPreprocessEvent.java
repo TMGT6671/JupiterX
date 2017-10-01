@@ -1,4 +1,4 @@
-﻿package blue.jupiterx.event.player;
+package blue.jupiterx.event.player;
 
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /

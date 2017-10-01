@@ -1,4 +1,4 @@
-﻿package blue.jupiterx.level.generator.normal;
+package blue.jupiterx.level.generator.normal;
 
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /

@@ -1,4 +1,4 @@
-﻿package blue.jupiterx.nbt.tag;
+package blue.jupiterx.nbt.tag;
 
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /

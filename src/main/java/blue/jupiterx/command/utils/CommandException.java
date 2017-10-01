@@ -1,4 +1,4 @@
-﻿package blue.jupiterx.command.utils;
+package blue.jupiterx.command.utils;
 
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /

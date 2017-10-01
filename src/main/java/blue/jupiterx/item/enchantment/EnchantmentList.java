@@ -1,4 +1,4 @@
-﻿package blue.jupiterx.item.enchantment;
+package blue.jupiterx.item.enchantment;
 
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /

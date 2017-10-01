@@ -1,4 +1,4 @@
-﻿package blue.jupiterx.level.sound;
+package blue.jupiterx.level.sound;
 
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /
