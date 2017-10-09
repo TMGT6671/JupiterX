@@ -1,5 +1,7 @@
 package blue.jupiterx.block;
 
+import blue.jupiterx.item.ItemFoodSource;
+
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /
  *  _  | | | | | '_ \| | __/ _ \ '__\  /
@@ -15,6 +17,6 @@ package blue.jupiterx.block;
  * @link http://jupiterx.blue
  */
 
-public class BlockCake {
+public class BlockCake extends BlockTransparent implements ItemFoodSource {
 
 }

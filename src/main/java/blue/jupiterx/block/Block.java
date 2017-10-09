@@ -1,5 +1,8 @@
 package blue.jupiterx.block;
 
+import blue.jupiterx.level.Position;
+import blue.jupiterx.metadata.Metadatable;
+
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /
  *  _  | | | | | '_ \| | __/ _ \ '__\  /
@@ -15,6 +18,6 @@ package blue.jupiterx.block;
  * @link http://jupiterx.blue
  */
 
-public class Block {
+public class Block extends Position implements BlockIds, Metadatable {
 
 }

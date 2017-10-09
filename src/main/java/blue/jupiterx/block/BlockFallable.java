@@ -15,6 +15,6 @@ package blue.jupiterx.block;
  * @link http://jupiterx.blue
  */
 
-public class BlockFallable {
+public abstract class BlockFallable extends BlockSolid {
 
 }

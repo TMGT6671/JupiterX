@@ -15,6 +15,6 @@ package blue.jupiterx.block;
  * @link http://jupiterx.blue
  */
 
-public class BlockBrownMushroomBlock {
+public class BlockBrownMushroomBlock extends BlockRedMushroomBlock {
 
 }

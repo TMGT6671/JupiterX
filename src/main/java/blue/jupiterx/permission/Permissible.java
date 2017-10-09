@@ -15,6 +15,6 @@ package blue.jupiterx.permission;
  * @link http://jupiterx.blue
  */
 
-public class Permissible {
+public interface Permissible {
 
 }

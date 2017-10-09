@@ -15,6 +15,6 @@ package blue.jupiterx.block;
  * @link http://jupiterx.blue
  */
 
-public class BlockEmerald {
+public class BlockEmerald extends BlockSolid {
 
 }

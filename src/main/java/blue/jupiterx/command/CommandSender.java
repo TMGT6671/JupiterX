@@ -1,5 +1,7 @@
 package blue.jupiterx.command;
 
+import blue.jupiterx.permission.Permissible;
+
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /
  *  _  | | | | | '_ \| | __/ _ \ '__\  /
@@ -15,6 +17,6 @@ package blue.jupiterx.command;
  * @link http://jupiterx.blue
  */
 
-public class CommandSender {
+public interface CommandSender extends Permissible {
 
 }

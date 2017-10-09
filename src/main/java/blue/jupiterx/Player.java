@@ -1,5 +1,9 @@
 package blue.jupiterx;
 
+import blue.jupiterx.command.CommandSender;
+import blue.jupiterx.entity.EntityHuman;
+import blue.jupiterx.level.ChunkLoader;
+
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /
  *  _  | | | | | '_ \| | __/ _ \ '__\  /
@@ -15,6 +19,6 @@ package blue.jupiterx;
  * @link http://jupiterx.blue
  */
 
-public class Player {
+public class Player extends EntityHuman implements CommandSender, ChunkLoader, IPlayer {
 
 }

@@ -15,6 +15,6 @@ package blue.jupiterx.block;
  * @link http://jupiterx.blue
  */
 
-public class BlockCocoaBlock extends BlockSolid {
+public class BlockConcretePowder extends BlockFallable {
 
 }

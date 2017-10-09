@@ -15,6 +15,6 @@ package blue.jupiterx;
  * @link http://jupiterx.blue
  */
 
-public class IPlayer {
+public interface IPlayer {
 
 }

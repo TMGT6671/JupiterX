@@ -15,6 +15,6 @@ package blue.jupiterx.block;
  * @link http://jupiterx.blue
  */
 
-public class BlockDandelion {
+public class BlockDandelion extends BlockFlowable {
 
 }

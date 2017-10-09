@@ -15,6 +15,6 @@ package blue.jupiterx.metadata;
  * @link http://jupiterx.blue
  */
 
-public class Metadatable {
+public interface Metadatable {
 
 }

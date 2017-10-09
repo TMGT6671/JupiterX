@@ -15,6 +15,6 @@ package blue.jupiterx.item;
  * @link http://jupiterx.blue
  */
 
-public class ItemFoodSource {
+public interface ItemFoodSource extends ItemConsumable {
 
 }

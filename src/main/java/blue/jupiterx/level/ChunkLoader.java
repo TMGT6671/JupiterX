@@ -15,6 +15,6 @@ package blue.jupiterx.level;
  * @link http://jupiterx.blue
  */
 
-public class ChunkLoader {
+public interface ChunkLoader {
 
 }

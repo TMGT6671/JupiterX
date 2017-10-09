@@ -15,6 +15,6 @@ package blue.jupiterx.block;
  * @link http://jupiterx.blue
  */
 
-public class BlockDoor {
+public abstract class BlockDoor extends BlockTransparent {
 
 }
