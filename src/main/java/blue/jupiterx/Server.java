@@ -16,7 +16,7 @@ import blue.jupiterx.utils.MainLogger;
  * JupiterX Project
  *
  * @author JupiterDevelopmentTeam
- * @link http://jupiterdevelopmentteam.github.io
+ * @link http://jupiterx.blue
  */
 
 public class Server {
@@ -45,6 +45,10 @@ public class Server {
 
         if(!new File(this.getPlayerPath()).exists()){
             new File(this.getPlayerPath()).mkdirs();
+        }
+
+        if(!new File(this.getLogPath()).exists()){
+            new File(this.getLogPath()).mkdirs();
         }
     }
 

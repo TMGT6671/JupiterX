@@ -96,7 +96,7 @@ public enum TextFormat {
      */
     RESET('r', 0x15);
 
-    //§
+    //則
     public static final char ESCAPE = '\u00A7';
 
     private static final Pattern CLEAN_PATTERN = Pattern.compile("(?i)" + String.valueOf(ESCAPE) + "[0-9A-FK-OR]");
