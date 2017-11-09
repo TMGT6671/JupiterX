@@ -1,5 +1,7 @@
 package blue.jupiterx.network;
 
+import blue.jupiterx.Server;
+
 /**     _             _ _          __  __
  *     | |_   _ _ __ (_) |_ ___ _ _\ \/ /
  *  _  | | | | | '_ \| | __/ _ \ '__\  /
@@ -16,5 +18,17 @@ package blue.jupiterx.network;
  */
 
 public class Network {
+	
+	private Server server;
+	
+	private SourceInterface[] interfaces;
+	
+	public Network(Server server){
+		this.server = server;
+	}
+	
+	public SourceInterface[] getInterfaces(){
+		return this.interfaces;
+	}
 
 }
