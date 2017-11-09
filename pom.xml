@@ -5,13 +5,13 @@
     <version>1.0-ALPHA</version>
     <name>Jupiter X</name>
     <description>Minecraft server software for Mobile platform</description>
-    
+
     <licenses>
-    	<license>
-    		<name>GNU General Public License, Version 3</name>
-    		<url>http://www.gnu.org/licenses/gpl-3.0.html</url>
-    		<distribution>repo</distribution>
-    	</license>
+        <license>
+            <name>GNU General Public License, Version 3</name>
+            <url>http://www.gnu.org/licenses/gpl-3.0.html</url>
+            <distribution>repo</distribution>
+        </license>
     </licenses>
 
     <properties>
@@ -54,13 +54,13 @@
             <version>2.14.2</version>
         </dependency>
         <dependency>
-			<!--
-				このライブラリの依存関係はパブリックリポジトリでは利用できないようです。
-				ライブラリはこのプロジェクトのlibディレクトリの中に入っています。
-				このライブラリを使用するにはローカルのMavenリポジトリに手動でインストールする必要があります。
-				下記のコマンドは、Mavenが正しく設定されていてあなたがlibディレクトリにいる状態で実行すると動作します。
-				mvn install:install-file -Dfile=leveldb.jar -DgroupId=com.tinfoiled.mcpe.leveldb -DartifactId=leveldb -Dversion=0.8 -Dpackaging=jar
-			-->
+            <!--
+                このライブラリの依存関係はパブリックリポジトリでは利用できないようです。
+                ライブラリはこのプロジェクトのlibディレクトリの中に入っています。
+                このライブラリを使用するにはローカルのMavenリポジトリに手動でインストールする必要があります。
+                下記のコマンドは、Mavenが正しく設定されていてあなたがlibディレクトリにいる状態で実行すると動作します。
+                mvn install:install-file -Dfile=leveldb.jar -DgroupId=com.tinfoiled.mcpe.leveldb -DartifactId=leveldb -Dversion=0.8 -Dpackaging=jar
+            -->
             <groupId>com.tinfoiled.mcpe.leveldb</groupId>
             <artifactId>leveldb</artifactId>
             <version>0.8</version>
