@@ -3,7 +3,7 @@
 rem JupiterX 起動バッチファイル(Windows専用)
 
 rem 作成: Itsu
-rem 最終更新: 2017/8/30 13:51
+rem 最終更新: 2017/10/15 14:17
 
 
 setlocal enabledelayedexpansion
@@ -15,7 +15,7 @@ rem count変数は起動回数の保持に使われます。いじらないで�
 set count=1
 
 rem Soft変数は起動するjarの名前です。
-set Soft=nukkit-0.1-SNAPSHOT.jar
+set Soft=jupiterx-1.0-ALPHA.jar
 
 
 
