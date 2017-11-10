@@ -30,17 +30,17 @@ public class Server {
     private String pluginPath;
 
     private MainLogger logger;
-    
+
     private Network network;
-    
+
     private PacketHandler handler;
-    
+
     private String motd = "ItsuTestServer";
-    
+
     private String address;
-    
+
     private int port = 19132;
-    
+
     private int maxConnections = 10;
 
     Server(MainLogger logger, final String filePath, String dataPath, String pluginPath) {
@@ -64,25 +64,25 @@ public class Server {
         if(!new File(this.getLogPath()).exists()){
             new File(this.getLogPath()).mkdirs();
         }
-        
-        handler = new PacketHandler(this);
+
+        handler = new PacketHandler();
         network = new Network(this, handler);
     }
-    
+
     public String getMotd() {
-    	return this.motd;
+        return this.motd;
     }
-    
+
     public String getAddress() {
-    	return this.address;
+        return this.address;
     }
-    
+
     public int getPort() {
-    	return this.port;
+        return this.port;
     }
-    
+
     public int getMaxConnections() {
-    	return this.maxConnections;
+        return this.maxConnections;
     }
 
     public MainLogger getLogger(){

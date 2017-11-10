@@ -29,7 +29,7 @@ public class ServerListener implements RakNetServerListener {
     // Packet Received
     @Override
     public void handleMessage(RakNetClientSession session, RakNetPacket packet, int channel) {
-        System.out.println("Handle Packet!: " + session.getAddress() + "::" + packet.array()[0] + "::" + channel);
+        System.out.println("Handle Packet!: " + session.getAddress() + "::" + packet.buffer().array() + "::" + channel);
         handler.handlePacket(session, packet);
     }
 
