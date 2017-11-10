@@ -2,6 +2,7 @@ package blue.jupiterx;
 
 import java.io.File;
 
+import blue.jupiterx.network.Network;
 import blue.jupiterx.utils.MainLogger;
 
 /**     _             _ _          __  __
@@ -28,6 +29,16 @@ public class Server {
     private String pluginPath;
 
     private MainLogger logger;
+    
+    private Network network;
+    
+    private String motd = "ItsuTestServer";
+    
+    private String address;
+    
+    private int port = 19132;
+    
+    private int maxConnections = 10;
 
     Server(MainLogger logger, final String filePath, String dataPath, String pluginPath) {
         this.logger = logger;
@@ -50,6 +61,24 @@ public class Server {
         if(!new File(this.getLogPath()).exists()){
             new File(this.getLogPath()).mkdirs();
         }
+        
+        network = new Network(this);
+    }
+    
+    public String getMotd() {
+    	return this.motd;
+    }
+    
+    public String getAddress() {
+    	return this.address;
+    }
+    
+    public int getPort() {
+    	return this.port;
+    }
+    
+    public int getMaxConnections() {
+    	return this.maxConnections;
     }
 
     public MainLogger getLogger(){
