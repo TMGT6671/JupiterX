@@ -3,6 +3,7 @@ package blue.jupiterx;
 import java.io.File;
 
 import blue.jupiterx.network.Network;
+import blue.jupiterx.network.PacketHandler;
 import blue.jupiterx.utils.MainLogger;
 
 /**     _             _ _          __  __
@@ -31,6 +32,8 @@ public class Server {
     private MainLogger logger;
     
     private Network network;
+    
+    private PacketHandler handler;
     
     private String motd = "ItsuTestServer";
     
@@ -62,7 +65,8 @@ public class Server {
             new File(this.getLogPath()).mkdirs();
         }
         
-        network = new Network(this);
+        handler = new PacketHandler(this);
+        network = new Network(this, handler);
     }
     
     public String getMotd() {

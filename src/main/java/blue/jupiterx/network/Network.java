@@ -36,19 +36,22 @@ public class Network {
     private RakNet raknet;
     
     private MinecraftIdentifier identifier;
+    
+    private PacketHandler handler;
 	
 	private SourceInterface[] interfaces;
 	
-	public Network(Server server){
+	public Network(Server server, PacketHandler handler){
 		this.server = server;
 		this.motd = server.getMotd();
 		this.address = server.getAddress();
 		this.port = server.getPort();
 		this.maxConnections = server.getMaxConnections();
+		this.handler = handler;
 		
 		identifier = new MinecraftIdentifier(motd, ProtocolInfo.SERVER_PROTOCOL, ProtocolInfo.MINECRAFT_VERSION, 0, maxConnections, new Random().nextLong(), "New World", "Survival");
 		
-		raknet = new RakNet(port, maxConnections, identifier);
+		raknet = new RakNet(port, maxConnections, identifier, handler);
 	}
 	
 	public SourceInterface[] getInterfaces(){

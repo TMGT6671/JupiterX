@@ -17,12 +17,12 @@ public class PacketHandler {
     }
 
     public void disConnected(RakNetSession session, String reason) {
-
+    	
     }
 
     public void handlePacket(RakNetSession session, RakNetPacket packet) {
-        switch(packet.getId()) {
-
+        switch(packet.array()[1]) {
+        	
         }
     }
 
