@@ -18,6 +18,7 @@ package blue.jupiterx.network.mcpe.protocol;
 public class ProtocolInfo {
 	
 	public static final int SERVER_PROTOCOL = 137;
+	public static final byte HEADER_PACKET_ID = (byte) 0xfe;
 	public static final String MINECRAFT_VERSION = "1.2.3";
 
 }
