@@ -15,9 +15,36 @@ package blue.jupiterx.math;
  * @link http://jupiterx.blue
  */
 
-public class JupiterXMath {
+import java.util.ArrayList;
 
-    public static Vector2 getDirection2D(double azimuth) {
-        return new Vector2(Math.cos(azimuth), Math.sin(azimuth));
+/**
+ * Math related classes, like matrices, bounding boxes and vector
+ */
+public class JupiterXMath {
+    
+    public static int floorFloat(float n) {
+        int i = (int) n;
+        return n >= i ? i : i -1;
+    }
+    
+    public static int celiFloat(float n) {
+        int i = (int) (n + 1);
+        return n >= i ? i : i -1;
+    }
+    
+    public static ArrayList<Float> solveQuadrotic(float a, float b, float c) {
+        ArrayList<Float> result = null;
+        float discriminant = (float) (Math.pow(b, 2) - 4 * a * c);
+        if(discriminant > 0) {
+            double sqrtDiscriminant = Math.sqrt(discriminant);
+            result.add((float) ((-b + sqrtDiscriminant) / (2 * a)));
+            result.add((float) ((-b - sqrtDiscriminant) / (2 * a)));
+            return result;
+        } else if(discriminant == 0) {
+            result.add(-b / (2 * a));
+        } else {
+            return result;
+        }
+        return null;
     }
 }
